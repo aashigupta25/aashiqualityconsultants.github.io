@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css1/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" media="screen and (min-width: 960px)" href="../static/css1/largedevice.css">
+  <link rel="stylesheet" media="screen and (max-width: 480px)" href="../static/css1/smalldevice.css">
+  <link rel="stylesheet" href="/static/css1/style1.css">
+  <link rel="stylesheet" href="/static/css1/style2.css">
+  <link rel="stylesheet" href="/static/css1/style3.css">
+</head>
+
+
+<title>AQC Website</title>
+</head>
+
+<body>
+  <header class="navbar1">
+    <nav class="flex1">
+
+      <div class="right" style="margin-left: auto;">
+        <a href="{% url 'Standard' %}">Standards</a>
+        <a href="{% url 'Consultancy' %}">Consultancy</a>
+        <a href="{% url 'Method' %}">Methods</a>
+        <a href="{% url 'Inspection' %}">Inspections</a>
+        <a href="{% url 'PhotoGallery' %}">PhotoGallery</a>
+        <a href="{% url 'Training' %}">Training</a>
+        <a href="{% url 'Compliance' %}">Compliance</a>
+        <a href="{% url 'SupplyChainImprovement' %}">Supply Chain Improvement</a>
+      </div>
+      <div class="mobile-navbar-btn">
+        <!-- <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+        <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon> -->
+      </div>
+      
+    </nav>
+    
+  </header>
+
+  <header>
+    <div class="container">
+      <nav class="flex items-center justify-between">
+        <div class="left flex items-center">
+          <div class="branding">
+            <img src="./images/" alt="AQC">
+          </div>
+          <div class="navItems">
+            <a href="{% url 'Home' %}">Home</a>
+            <a href="{% url 'Client' %}">Client</a>
+            <a href="{% url 'Services' %}">Services</a>
+            <a href="{% url 'CompanyProfile' %}">ComapnyProfile</a>
+            {% comment %} <a href="{% url 'Industry' %}">Industry</a> {% endcomment %}
+          </div>
+        </div>
+        <div class="right">
+          <a href="{% url 'Contact' %}" <button class="btn btn-primary">
+            CONTACT
+            </button>
+          </a>
+        </div>
+        <div class="mobile-navbar-btn">
+          <!-- <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+          <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon> -->
+        </div>
+      </nav>
+    </div>
+   
+  </header>
+
+
+
+  <section>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active slider">
+          <img src="../static/Images/1.png" class="d-block w-100" style="height: 600px;" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- <h5>First slide label</h5> -->
+            <!-- <p>Some representative placeholder content for the first slide.</p> -->
+          </div>
+        </div>
+        <div class="carousel-item slider">
+          <img src="../static/Images/2.png" class="a-block w-100" style="height: 600px;" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- <h5>Second slide label</h5> -->
+            <!-- <p>Some representative placeholder content for the second slide.</p> -->
+          </div>
+        </div>
+        <div class="carousel-item slider">
+          <img src="../static/Images/3.png" class="d-block w-100" style="height: 600px;" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- <h5>Third slide label</h5> -->
+            <!-- <p>Some representative placeholder content for the third slide.</p> -->
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </section>
+
+  <!-- <section class="intro"> -->
+  <div class="welcome-section">
+    <h1 class="responsive-heading sliding-heading">WELCOME TO AASHI QUALITY CONSULTANTS</h1>
+    <p class="responsive-paragraph">At Aashi Quality Consultants, we are dedicated to providing the highest level of
+      service and expertise to help our clients achieve their goals. Our team of experienced professionals is committed
+      to delivering quality solutions that meet the needs of businesses of all sizes. We look forward to working with
+      you and helping you succeed.</p>
+    <p class="responsive-paragraph">"Aashi Quality Consultants is a premier consultancy firm that has been providing
+      exceptional services in the field of ISO and other quality management systems since its establishment in 2000.
+      Their expertise and experience in the industry is unparalleled, making them the go-to choice for organizations
+      looking to achieve their quality goals and objectives.</p>
+    <p class="responsive-paragraph">
+      Our comprehensive range of services includes ISO 9001, ISO 14001, OHSAS 18001, TS 16949, SA 8000, BSCI, ETI,
+      W.R.A.P, Six Sigma, Lean Six Sigma, Lean Manufacturing, TPM, TQM & Business Excellence Models, AS 9100, TL 9000,
+      ISO 17025 / NABL, ISO 27001 ISMS, ISO 20000, CMM, ISO 22000 FSMS, HSE, TS 29001, CE Marking, MSA, FMEA, PPAP,
+      APQP, SPC, SQC, Problem Solving Tools / 7 QC Tools, 8-D, 5-S, Quality Circles, Kaizen, Buyer Audits, Buyer
+      Compliances, Facility Evaluations and Third Party Inspections. Their team of highly skilled and experienced
+      professionals provide tailor-made solutions that are tailored to meet the specific needs of each client.</p>
+    <p class="responsive-paragraph">
+      Aashi Quality Consultants is dedicated to delivering the highest level of customer satisfaction and continuously
+      strives to exceed expectations. They are committed to helping organizations achieve their quality objectives and
+      reach their full potential. Partnering with Aashi Quality Consultants is not just a decision, it is an investment
+      in the future of your organization."</p>
+    <a href="{% url 'CompanyProfile' %}">READ MORE....</a>
+
+  </div>
+  <!-- </section> -->
+
+  <section class="services">
+    <div class="wrapper">
+      <div class="header">AQC Quality and Comliance Consulting Services</div>
+
+      <div class="cards_wrap">
+        <div class="card_item">
+          <div class="card_inner">
+            <img src="black_panther.png" alt="Image">
+            <div class="role_name">ISO 9001:2015</div>
+            <div class="real_name">AASHI QUALTY CONSULTANTS</div>
+            <div class="film">Achieve international recognition for your organization's quality management systems by obtaining ISO 9001:2015 certification, with AQC's expert guidance and consulting services.</div>
+          </div>
+        </div>
+        <div class="card_item">
+          <div class="card_inner">
+            <img src="doctor_strange.png" alt="Image">
+            <div class="role_name">ISO 14001:2015</div>
+            <div class="real_name">AASHI QUALTY CONSULTANTS</div>
+            <div class="film">Streamlining your quality management process and increase efficiency by achieving ISO 14001:2015 certification, the international standard for quality management systems, with AQC's expert consulting services.</div>
+          </div>
+        </div>
+        <div class="card_item">
+          <div class="card_inner">
+            <img src="black_widow.png" alt="Image">
+            <div class="role_name">IATF 16949:2016</div>
+            <div class="real_name">AASHI QUALTY CONSULTANTS</div>
+            <div class="film">Maximize efficiency, improve customer satisfaction and enhance your organization's reputation by achieving IATF 16949:2016 certification, with AQC's expert consulting services.</div>
+          </div>
+        </div>
+        <div class="card_item">
+          <div class="card_inner">
+            <img src="Spider_man.png" alt="Image">
+            <div class="role_name">SEDEX</div>
+            <div class="real_name">AASHI QUALTY CONSULTANTS</div>
+            <div class="film">AQC - Your partner in achieving and maintaining SEDEX certification, the international standard for quality management systems.</div>
+          </div>
+        </div>
+        <div class="card_item">
+          <div class="card_inner">
+            <img src="black_widow.png" alt="Image">
+            <div class="role_name">SA 8000</div>
+            <div class="real_name">AASHI QUALTY CONSULTANTS</div>
+            <div class="film">Expertly navigate the SA 8000 certification process and achieve international recognition for your organization's quality management systems with AQC's consulting services.</div>
+          </div>
+        </div>
+        <div class="card_item">
+          <div class="card_inner">
+            <img src="black_panther.png" alt="Image">
+            <div class="role_name">IRIS</div>
+            <div class="real_name">AASHI QUALTY CONSULTANTS</div>
+            <div class="film">Obtain international recognition for your organization's quality management systems by achieving IRIS certification with AQC's expert consulting services.</div>
+          </div>
+        </div>
+        <div class="card_item">
+          <div class="card_inner">
+            <img src="Spider_man.png" alt="Image">
+            <div class="role_name">ISO 45001:2018</div>
+            <div class="real_name">AASHI QUALTY CONSULTANTS</div>
+            <div class="film">Enhance your organization's reputation and improve customer satisfaction by achieving ISO 45001:2018 certification, the international standard for quality management systems, with AQC's expert consulting services.</div>
+          </div>
+        </div>
+        <div class="card_item">
+          <div class="card_inner">
+            <img src="doctor_strange.png" alt="Image">
+            <div class="role_name">ISO 50001:2018</div>
+            <div class="real_name">AASHI QUALTY CONSULTANTS</div>
+            <div class="film">Improve your organization's quality management systems and achieve ISO 50001:2018 certification with AQC's expert guidance and consulting services.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+   <a href="{% url 'Services' %}">Read More</a>
+  </section>
+
+  <section class="industries">
+    <div class="card-container">
+      <div class="card">
+        <!-- <img src="image2.jpg" alt="Card Image"> -->
+        <h2>5-S Implementations</h2>
+        <p>Implementing a Lean Six Sigma (5S) System for Improved Efficiency and Productivity</p>
+      </div>
+      <div class="card">
+        <!-- <img src="image2.jpg" alt="Card Image"> -->
+        <h2>Six Sigma</h2>
+        <p>Unlocking Business Success through Six Sigma Methodology: Achieving Excellence in Quality and Efficiency</p>
+      </div>
+
+      <div class="card">
+        <!-- <img src="image.jpg" alt="Card Image"> -->
+        <h2>APQP</h2>
+        <p>Expertise in Advanced Product Quality Planning (APQP) for Improved Product Development</p>
+      </div>
+      <div class="card">
+        <!-- <img src="image2.jpg" alt="Card Image"> -->
+        <h2>POKA-YOKE</h2>
+        <p>Eliminating Errors with Poke-Yoke: Implementing a Proven Method for Error-Proofing Processes</p>
+      </div>
+
+      <div class="card">
+        <!-- <img src="image.jpg" alt="Card Image"> -->
+        <h2>WORK STANDARDIZATION</h2>
+        <p>Aashi Quality Consultants: Leading the way in Work Standardization for Improved Efficiency and Quality</p>
+      </div>
+      <div class="card">
+        <!-- <img src="image2.jpg" alt="Card Image"> -->
+        <h2>PROBLEM SOLVING</h2>
+        <p>Aashi Quality Consultants: Proven problem-solving skills to drive business success and continuous improvement</p>
+      </div>
+
+    </div>
+<a href="{% url 'Method' %}">READ MORE</a>
+
+  </section>
+<!-- {% comment %} 
+  <section class="certificate">
+    <div class="cotainerr">
+      <div class="row no-gutters bg-light position-relative">
+        <div class="col-md-6 mb-md-0 p-md-4">
+          <img src="../static/Images/1.jpg" class="w-100" alt="...">
+        </div>
+        <div class="col-md-6 position-static p-4 pl-md-0">
+          <h5 class="mt-0">Columns with stretched link</h5>
+          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
+            odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+            Donec lacinia congue felis in faucibus.</p>
+          <a href="#" class="stretched-link">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cotainerr" style="padding-top: 4rem;">
+      <div class="row no-gutters bg-light position-relative" style=>
+        <div class="col-md-6 mb-md-0 p-md-4">
+          <img src="../static/Images/1.jpg" class="w-100" alt="...">
+        </div>
+        <div class="col-md-6 position-static p-4 pl-md-0">
+          <h5 class="mt-0">Columns with stretched link</h5>
+          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
+            odio,
+            vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
+            lacinia congue felis in faucibus.</p>
+          <a href="#" class="stretched-link">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cotainerr" style="padding-top: 4rem;">
+      <div class="row no-gutters bg-light position-relative">
+        <div class="col-md-6 mb-md-0 p-md-4">
+          <img src="../static/Images/1.jpg" class="w-100" alt="...">
+        </div>
+        <div class="col-md-6 position-static p-4 pl-md-0">
+          <h5 class="mt-0">Columns with stretched link</h5>
+          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
+            odio,
+            vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
+            lacinia congue felis in faucibus.</p>
+          <a href="#" class="stretched-link">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Our Clients">
+    <p>Our Clients</p>
+
+  </section> {% endcomment %} -->
+
+  <footer class=footer>
+    <div>AQC</div>
+    <h1>AASHI QUALITY CONSULTANTS</h1>
+    <div>
+      <p> P.N. GUPTA</p>
+      <p> Contact No.: 941405074 </p>
+      <p> Email: png_aqc@yahoo.com <p>
+      </div>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
+
+<!-- Chatbox -->
+<!-- Feedback Form -->
+<!-- Contact Form -->

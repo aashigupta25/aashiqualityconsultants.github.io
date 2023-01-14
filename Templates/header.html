@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css1/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>AQC Website</title>
+</head>
+
+<body>
+  <header class="navbar1">
+    <nav class="flex1">
+        <div class="right" style="margin-left: auto;">
+            <a href="{% url 'Standard' %}">Standards</a>
+            <a href="{% url 'Consultancy' %}">Consultancy</a>
+            <a href="{% url 'Method' %}">Methods</a>
+            <a href="{% url 'Inspection' %}">Inspections</a>
+            <a href="{% url 'PhotoGallery' %}">PhotoGallery</a>
+            <a href="{% url 'Training' %}">Training</a>
+            <a href="{% url 'Compliance' %}">Compliance</a>
+            <a href="{% url 'SupplyChainImprovement' %}">Supply Chain Improvement</a>
+        </div>
+    </nav>
+  </header>
+    
+      <header>
+        <div class="container">
+          <nav class="flex items-center justify-between">
+            <div class="left flex items-center">
+              <div class="branding">
+                <img src="./images/" alt="AQC">
+              </div>
+              <div>
+                <a href="{% url 'Home' %}">Home</a>
+                <a href="{% url 'Client' %}">Clients</a>
+                <a href="{% url 'Services' %}">Services</a>
+                <a href="{% url 'CompanyProfile' %}">ComapnyProfile</a>
+                {% comment %} <a href="{% url 'Industry' %}">Industry</a> {% endcomment %}
+              </div>
+            </div>
+            <div class="right">
+              <a href="{% url 'Contact' %}" <button class="btn btn-primary">
+                CONTACT
+                </button>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </header>
+    
+
+
+</body>
+
+</html>

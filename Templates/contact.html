@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="/static/css1/style.css">
+    <link rel="stylesheet" href="/static/css1/contactstyle.css">
+</head>
+
+<body>
+    {% for message in messages %} 
+    <div class="alert alert- {{ message.tags }} alert-disssible fade show" role = "alert">
+        <strong> Message : </strong> {{ message }}
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        Wait!
+    </div>
+    {% endfor %}
+    <div class="containerr">
+        <form class = "contactForm", action="/contact/", method="post">
+        {% csrf_token %}
+            <input type="text" name="name" id="name" placeholder="Enter your Name">
+            <input type="email" name="email" id="email" placeholder="Enter your Email">
+            <input type="phone" name="phone" id = "phone" placeholder="Enter your Phone Number">
+            <input type="text" name="service" id = "service" placeholder="Enter the Service name you want">
+            <textarea name="desc" id="desc" cols="30" rows="10" placeholder="Enter any other Information Here"></textarea>
+            <button class="btnn btn btn-primary">Submit</button>
+     
+        </form>
+</body>
+
+</html>
+
+{% endblock %}

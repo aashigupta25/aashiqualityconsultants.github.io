@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+} 
+
+.welcome-section {
+    text-align: center;
+    overflow: hidden;
+    white-space: wrap;
+    background-color: rgb(255, 255, 255);
+    color: blue;
+}
+  
+.responsive-heading {
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    animation: slide-animation 30s linear infinite;
+    /* background-color: rgb(0, 60, 255); */
+    color: blue;
+}
+  
+.responsive-paragraph {
+    font-size: 1.2em;
+    line-height: 1.5;
+    max-width: 100%;
+    margin: 0 auto;
+    color: blue;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+.image-container {
+  text-align: center; /* centers the image horizontally */
+}
+
+img {
+  width: 40%; /* sets the width of the image to 50% of its containing element */
+  display: block; /* centers the image vertically */
+  margin: 0 auto;
+}
+
+
+@keyframes slide-animation {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .responsive-heading {
+      font-size: 2em;
+    }
+    .responsive-paragraph {
+      font-size: 1em;
+    }
+  }

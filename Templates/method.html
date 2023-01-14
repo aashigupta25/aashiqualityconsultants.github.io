@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            background-color: rgb(88, 88, 217);
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            margin: 5px;
+            border: 2px solid blue;
+        }
+
+        button:hover {
+            background-color: rgb(3, 3, 253);
+            cursor: pointer;
+
+        }
+
+        .centerSpace {
+            align-items: center;
+            margin-top: 50px;
+            margin-left: 10em;
+            margin-right: 10em;
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            color: rgb(1, 41, 41);
+        }
+
+        .image-container {
+            text-align: center; /* centers the image horizontally */
+            margin-top: 20px;
+          }
+          
+          img {
+            width: 50%; /* sets the width of the image to 50% of its containing element */
+            display: block; /* centers the image vertically */
+            margin: 0 auto;
+           
+          }
+          
+
+    </style>
+</head>
+
+<body>
+    <div class="centerSpace">
+        <h2>Methods</h2>
+        <a href="{% url 'KAIZEN' %}">
+            <button>Kaizen</button>
+        </a>
+        <a href="{% url 'APQP' %}">
+            <button>APQP</button>
+        </a>
+        <a href="{% url 'SIXSIGMA' %}">
+            <button>Six Sigma</button>
+        </a>
+        <a href="{% url 'POKAYOKA' %}">
+            <button>POKA-YOKA</button>
+        </a>
+        <a href="{% url 'WK' %}">
+            <button>Work Standardization</button>
+        </a>
+        <div class="image-container">
+            <img src="../static/Images/Screenshot (49).png" alt="image description">
+          </div>
+
+          <div class="image-container">
+            <img src="../static/Images/Screenshot (50).png" alt="image description">
+          </div>
+
+          <div class="image-container">
+            <img src="../static/Images/Screenshot (51).png" alt="image description">
+          </div>
+
+          
+          
+    </div>
+</body>
+
+</html>
+
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet" href="/static/css1/style.css">
+    <style>
+        .clientPage {
+            padding: 7%;}
+
+        .image-container {
+            text-align: center;
+            /* centers the image horizontally */
+        }
+
+        img {
+            width: 50%;
+            /* sets the width of the image to 50% of its containing element */
+            display: block;
+            /* centers the image vertically */
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-container">
+        <img src="../static/Images/Screenshot (54).png" alt="image description">
+    </div>
+
+    <div class="image-container">
+        <img src="../static/Images/Screenshot (55).png" alt="image description">
+    </div>
+    <div class="image-container">
+        <img src="../static/Images/Screenshot (56).png" alt="image description">
+    </div>
+    <div class="image-container">
+        <img src="../static/Images/Screenshot (57).png" alt="image description">
+    </div>
+</body>
+{% endblock %}

@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+          } 
+          
+          .welcome-section {
+              text-align: center;
+              overflow: hidden;
+              white-space: wrap;
+              background-color: rgb(255, 255, 255);
+              color: blue;
+          }
+            
+          .responsive-heading {
+              font-size: 3em;
+              font-weight: bold;
+              margin-top: 0.5em;
+              margin-bottom: 0.5em;
+              text-transform: uppercase;
+              animation: slide-animation 30s linear infinite;
+              /* background-color: rgb(0, 60, 255); */
+              color: blue;
+          }
+            
+          .responsive-paragraph {
+              font-size: 1.2em;
+              line-height: 1.5;
+              max-width: 100%;
+              margin: 0 auto;
+              color: blue;
+              padding-left: 5%;
+              padding-right: 5%;
+          
+          }
+          
+          @keyframes slide-animation {
+              from {
+                transform: translateX(100%);
+              }
+              to {
+                transform: translateX(-100%);
+              }
+            }
+            
+            @media (max-width: 768px) {
+              .responsive-heading {
+                font-size: 2em;
+              }
+              .responsive-paragraph {
+                font-size: 1em;
+              }
+            }
+        </style>
+</head>
+<body>
+    <div class="welcome-section">
+        <h1 class="responsive-heading sliding-heading">WELCOME TO AASHI QUALITY CONSULTANTS</h1>
+        <p class="responsive-paragraph">Errors made during inspections can have serious negative consequences for your business, including unhappy customers, rejected products, financial losses, and penalties. To avoid these issues and improve overall customer satisfaction, quality, and productivity, our company offers inspection quality improvement programs. These programs will help you to identify and eliminate errors in your inspection process, leading to better quality products and happier customers. By implementing our programs, you can reduce the risk of costly mistakes, increase productivity, and improve your reputation in the market. Invest in our inspection quality improvement programs to see a positive impact on your business.</p>
+        <p class="responsive-paragraph"></p>
+        <p class="responsive-paragraph"></p>
+        <p class="responsive-paragraph"></p>
+        <p class="responsive-paragraph"></p>
+        <p class="responsive-paragraph"></p>
+        <p class="responsive-paragraph"></p>
+
+
+        <div>
+          <h3>Third Party Inspection (both Inbound and Outbound)</h3>
+          <p class="responsive-paragraph">Our company offers third-party inspection services for both inbound and outbound products. Our inspectors are highly trained and experienced, and will provide unbiased and accurate assessments of your products to ensure they meet your specifications and quality standards.</p>
+          <h3>Inspector Accuracy Assessments</h3>
+          <p class="responsive-paragraph">Our inspector accuracy assessments are designed to ensure that your inspectors are performing to the highest standards. We will evaluate their performance, identify areas for improvement, and provide training and support to help them achieve the highest level of accuracy.</p>
+          <h3>Measurement System Analysis</h3>
+          <p class="responsive-paragraph">We understand the importance of accurate measurements in the inspection process. Our measurement system analysis services will help you to identify and eliminate sources of measurement error, so you can achieve more accurate and reliable results.</p>
+          <h3>Training To Eliminate Common Inspection Errors</h3>
+          <p class="responsive-paragraph">Our training programs are designed to help you and your team to identify and eliminate common inspection errors. Our training is tailored to your specific needs and will help you to achieve higher levels of accuracy, efficiency, and quality.</p>
+          <h3>Making Your Supply Chain Compliant To 6 Sigma Level</h3>
+          <p class="responsive-paragraph">Our six sigma compliance program will help you to improve the efficiency and quality of your supply chain. We will work with you to identify areas of improvement, implement 6 sigma methodologies, and help you to achieve compliance with industry standards and regulations.</p>
+      </div>
+    
+      </div>
+</body>
+</html>
+
+{% endblock %}

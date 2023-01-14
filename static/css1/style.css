@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+
+.body{
+    font-family: sans-serif;
+    background-color: rgb(41, 41, 41);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialised;
+}
+
+.nav{
+    padding-right: 102px;
+}
+
+.nav .nav-item .nav-link{
+    color: rgb(149, 255, 0) ;
+    font-size: 18px;
+}
+
+.nav .nav-item .nav-link:hover{
+    cursor: pointer;
+    color: yellow;
+}
+
+header{
+    background: rgb(129, 70, 145); 
+}
+
+
+header nav .left a{
+    color: rgb(149, 255, 0);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+
+}
+
+header nav{
+    padding: 1.4rem 0;
+}
+
+header nav .branding{
+    margin-right:  3rem;
+}
+
+header nav .left a:hover{
+    color: rgb(255, 255, 66);
+    
+}
+
+
+.btn{
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    text-decoration: none;
+}
+
+.btn-primary{
+    background: rgb(72, 255, 0);
+    color: rgb(4, 46, 255);
+}
+
+.btn-primary:hover{
+    background: transparent;
+    border-color: rgb(172, 252, 24);
+}
+
+.flex{
+    display: flex;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+section{
+    /* background-color: rgb(255, 247, 1); */
+    /* border: 1px solid yellowgreen; */
+}
+
+.btn-secondary{
+    background: transparent;
+    color: var(--aqua);
+    border-color: var(--aqua);  
+}
+
+.btn-secondary:hover{
+    background: var(--aqua);
+    color: var(--violet);
+}
+
+
+section.services{
+    background: #ECEFFE;
+    border-color: black;
+    padding-top: 5%;
+    padding-left: 2%;
+    padding-right: 2.5%;
+    padding-bottom: 5%;
+
+}
+
+section.industries{
+    background-color: rgb(48, 48, 48);
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+
+
+section.certificate{
+    background: black;
+    padding-top: 5rem;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 5rem;
+}
+
+
+
+
+footer{
+    background: rgb(125, 255, 3);
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+    text-align: center;
+}
+
+.navbar1{
+    background-color: black;
+    height: 40px;
+}
+
+.flex1{
+    display: flex;
+    margin-right: 5rem;
+    padding-top: 0.5rem;
+}
+
+.navbar1 nav .right a{
+    color: rgb(77, 255, 0);
+    text-decoration: none;
+    margin-left: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+.navbar1 nav .right a:hover{
+    color: yellow;
+}
+
+
+/* Mobile styles */
+
+@media(max-width: 70em){
+    .navbar1 .flex1{
+        display: none;
+    }
+}
+
+
+@media (max-width: 700px) {
+    /* Hide the right section on mobile */
+    .navbar1 .right,
+    header .right {
+      display: none;
+    }
+  
+    /* Show the mobile navigation button */
+    .mobile-navbar-btn {
+      display: block;
+    }
+  
+    /* Make the navigation items stack vertically */
+    header .left .navItems,
+    .navbar1 .left .navItems {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .section{
+        padding: 0, 0;
+        margin: 0, 0;
+    }
+  }
+  
+  /* Desktop styles */
+@media (min-width: 701px) {
+    /* Show the right section on desktop */
+    .navbar1 .right,
+    header .right {
+      display: block;
+    }
+  
+    /* Hide the mobile navigation button */
+    .mobile-navbar-btn {
+      display: none;
+    }
+  
+    /* Make the navigation items display horizontally */
+    header .left .navItems,
+    .navbar1 .left .navItems {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+
+
+@media screen and (max-width: 700px) {
+    section{
+        margin: 0, auto;
+        padding: 0; 
+        /* width: 50%; */
+    }
+
+    .branding{
+        display: block;
+    }
+
+}
+
